@@ -10,26 +10,22 @@
             margin: 0;
             padding: 0;
             height: 100%;
+            background-color: #000000;
         }
 
         body {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #000000;
         }
 
         .logo-container img {
-            width: 80%;
+            display: block;       /* important for margin auto */
+            margin: 0 auto;       /* centers the image */
+            width: auto;          /* natural width */
             max-width: 650px;
             min-width: 200px;
             height: auto;
-        }
-
-        @media (max-width: 650px) {
-            .logo-container img {
-                min-width: 150px;
-            }
         }
     </style>
 </head>
